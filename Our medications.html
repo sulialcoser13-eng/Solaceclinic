@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Assignment</title>
+    <link rel="stylesheet" href="Our medications.css">
+     <nav class="white-navbar">
+     
+        <div class="nav-container">
+        <a href="home.html" class="nav-item">Home</a>
+        <a href="Our location.html" class="nav-item">Our location</a>
+        <a href="About us.html" class="nav-item">About us</a>
+        <a href="Welcome to solace.html" class="nav-item">Welcome to Solace</a>
+        <a href="our services.html" class="nav-item">Our services</a>
+        <a href="our medications.html" class="nav-item">Our medication</a>
+        <a href="our team.html" class="nav-item">Our team</a>
+        <a href="Register.html" class="nav-item">Register</a>
+    </div>
+</nav>
+</head>
+<body>
+<section class="main-content">
+     <h1 class="section-title">Medications offered</h1>
+        <hr class="divider">
+        <div class="gallery-layout">
+        <div class="product-box" onclick="togglePopUp(this)">
+            <div class="image-wrapper">
+            <img src="insulin.png" alt="Insulin injection">
+            </div>
+            <p class="product-label">Insulin injection</p>
+            <div class="price-popup">Price:Public clinic (NHR): Free – BZ$10</div>
+        </div>
+          <div class="product-box" onclick="togglePopUp(this)">
+            <div class="image-wrapper">
+            <img src="tylenol.png" alt="Tylenol">
+            </div>
+            <p class="product-label">Tylenol</p>
+            <div class="price-popup">price:Public clinic (NHR): Free – BZ$5</div>
+        </div>
+        <div class="product-box" onclick="togglePopUp(this)">
+             <div class="image-wrapper">
+              <img src="multivitamins.png" alt="Multivitamins">
+            </div>
+            <p class="product-label">Multivitamins</p>
+            <div class="price-popup">Price:Public clinic (NHR): Free – BZ$5</div>
+        </div>
+
+
+       
+        <div class="product-box" onclick="togglePopUp(this)">
+            <div class="image-wrapper">
+              <img src="Birth control tablets.png" alt="Birth control tablets">
+            </div>
+            <p class="product-label">Birth control tablets</p>
+            <div class="price-popup">Price: Public clinic (NHR): Free – BZ$5</div>
+        </div>
+          <div class="product-box" onclick="togglePopUp(this)">
+            <div class="image-wrapper">
+               <img src="ibu.png" alt="Ibuprofen">
+            </div>
+            <p class="product-label">Ibuprofen</p>
+            <div class="price-popup">Price:Public clinic (NHR): Free – BZ$3</div>
+        </div>
+        <div class="product-box" onclick="togglePopUp(this)">
+            <div class="image-wrapper">
+                <img src="acetaminophen.png" alt="Acetaminophen">
+            </div>
+            <p class="product-label">Acetaminophen</p>
+            <div class="price-popup">Price: Tablet: BZ$1–$3,Syrup: Free or BZ$3–$5</div>
+        </div></section>
+
+    </div></section>
+ <footer class="scrolling-footer">
+        <div class="marquee">
+          Care You Can Trust, Comfort You Deserve • Care You Can Trust, Comfort You Deserve • Care You Can Trust, Comfort You Deserve • Care You Can Trust, Comfort You Deserve
+        </div>
+        </div>
+    </footer>
+    <script>
+        function togglePopUp(element) {
+           
+            const price = element.querySelector('.price-popup');
+            
+  
+            if (price.style.display === "block") {
+                price.style.display = "none";
+            } else {
+                price.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
